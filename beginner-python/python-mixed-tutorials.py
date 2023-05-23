@@ -250,3 +250,24 @@ print(string3) # '1.12'
 # How about limiting 1.111.11 to two decimal places? We can use %.2f 
 
 #If we pass a float that’s greater than two decimal places, then %.2f will round off the number (line 7).
+
+
+#############
+
+#Operators!
+
+#Operators are represented by characters or special keywords.
+
+#In general, Python’s operators follow the in-fix or prefix notations.
+
+#In-fix operators appear between two operands (values on which the operator acts) and hence, are usually known as binary operators
+
+#A prefix operator usually works on one operand and appears before it. Hence, prefix operators are known as unary operators
+
+#The 5 main operator types in Python are:
+    #arithmetic operators
+    #comparison operators
+    #assignment operators
+    #logical operators
+    #bitwise operators
+
