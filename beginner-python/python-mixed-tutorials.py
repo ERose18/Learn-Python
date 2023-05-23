@@ -129,6 +129,8 @@ print(id(str1))
 
 #############
 
+#The None Keyword!
+
 #Python offers another data type called NoneType. It only has a single value, None.
 # We can assign None to any variable, but we can not create other NoneType variables.
 
@@ -142,6 +144,8 @@ print (type(val))
 #None is not 0
 
 #############
+
+#String Slicing!
 
 #Slicing is the process of obtaining a portion (substring) of a string by using its indices.
 
@@ -191,3 +195,58 @@ print(my_string[:8])  # All the characters before 'M'
 print(my_string[8:])  # All the characters starting from 'M'
 print(my_string[:])  # The whole string
 print(my_string[::-1])  # The whole string in reverse (step is -1)
+
+#############
+
+#String Formatting!
+
+#String formatting means substituting values into a string. Following are some use cases of string formatting:
+
+    #Inserting strings within a string
+    #Inserting integers within a string
+    #Inserting floats within a string
+
+
+#Inserting Strings Within a String#
+
+string1 = "I like %s" % "Python"
+print(string1) # 'I like Python'
+
+temp = "Educative"
+string2 = "I like %s" % temp
+print(string2) # 'I like Educative'
+
+string3 = "I like %s and %s" % ("Python", temp)
+print(string3)  # 'I like Python and Educative'
+
+#The %s is the format specifier, which tells Python to insert the text here. Python will insert a string if:
+
+    #We follow the string with a % and another string.
+    #We follow the string with a % and another string type variable.
+    #We can also insert multiple strings by putting multiple instances of %s inside our string
+
+
+#Inserting Integers Within a String#
+
+my_string = "%i + %i = %i" % (1,2,3)
+print(my_string) # '1 + 2 = 3'
+
+#The %i is the format specifier, which tells Python to insert the integers here.
+
+
+#Inserting Floats Within a String#
+
+string1 = "%f" % (1.11)
+print(string1) # '1.110000'
+
+string2 = "%.2f" % (1.11)
+print(string2) # '1.11'
+
+string3 = "%.2f" % (1.117)
+print(string3) # '1.12'
+
+
+#%f is used to substitute floats within a string. Note, string1 includes extra zeroes. 
+# How about limiting 1.111.11 to two decimal places? We can use %.2f 
+
+#If we pass a float that’s greater than two decimal places, then %.2f will round off the number (line 7).
