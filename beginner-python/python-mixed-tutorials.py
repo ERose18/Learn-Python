@@ -126,3 +126,68 @@ print(id(str1))
 #In Python 3.x, all strings are unicode. But, older versions of Python (Python 2.x) support only ASCII characters.
 #To use unicode in Python 2.x, preceding the string with a u is must. For example:
 #string = u"This is unicode"
+
+#############
+
+#Python offers another data type called NoneType. It only has a single value, None.
+# We can assign None to any variable, but we can not create other NoneType variables.
+
+val = None
+print(val) # prints "None" and returns None
+print (type(val))
+
+#None is not a default value for the variable that has not yet been assigned a value.
+#None is not the same as False.
+#None is not an empty string.
+#None is not 0
+
+#############
+
+#Slicing is the process of obtaining a portion (substring) of a string by using its indices.
+
+#Given a string, we can use the following template to slice it and obtain a substring:
+
+    #string[start:end] 
+
+        #start is the index from where we want the substring to start.
+        #end is the index where we want our substring to end.
+
+#The character at the end index in the string, will not be included in the substring obtained through this method.
+
+my_string = "This is MY string!"
+print(my_string[0:4]) # From the start till before the 4th index
+print(my_string[1:7])
+print(my_string[8:len(my_string)]) # From the 8th index till the end
+
+#Python 3 also allows us to slice a string by defining a step through which we can skip characters in the string.
+# The default step is 1, so we iterate through the string one character at a time.
+
+#The step is defined after the end index:
+
+    #string[start:end:step]
+    
+my_string = "This is MY string!"
+print(my_string[0:7])  # A step of 1
+print(my_string[0:7:2])  # A step of 2
+print(my_string[0:7:5])  # A step of 5
+
+#The output of print(my_string[0:7:5]) should be "Ti s"
+
+#Strings can also be sliced to return a reversed substring. In this case, we would need to switch the order of the start and end indices.
+#A negative step must also be provided:
+
+my_string = "This is MY string!"
+print(my_string[13:2:-1]) # Take 1 step back each time
+print(my_string[17:0:-2]) # Take 2 steps back. The opposite of what happens in the slide above
+
+#One thing to note is that specifying the start and end indices is optional.
+
+#If start is not provided, the substring will have all the characters until the end index.
+
+#If end is not provided, the substring will begin from the start index and go all the way to the end.
+
+my_string = "This is MY string!"
+print(my_string[:8])  # All the characters before 'M'
+print(my_string[8:])  # All the characters starting from 'M'
+print(my_string[:])  # The whole string
+print(my_string[::-1])  # The whole string in reverse (step is -1)
