@@ -182,12 +182,10 @@ print(my_string[0:7:5])  # A step of 5
 
 my_string = "This is MY string!"
 print(my_string[13:2:-1]) # Take 1 step back each time
-print(my_string[17:0:-2]) # Take 2 steps back. The opposite of what happens in the slide above
+print(my_string[17:0:-2]) # Take 2 steps back. The opposite of what happens above
 
 #One thing to note is that specifying the start and end indices is optional.
-
 #If start is not provided, the substring will have all the characters until the end index.
-
 #If end is not provided, the substring will begin from the start index and go all the way to the end.
 
 my_string = "This is MY string!"
