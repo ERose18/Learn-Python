@@ -328,3 +328,63 @@ print(num2 >> 3)     # 2   -> Binary value = 0010
 #this operation is now completed
 
 #the number 0011 will be equal to 11, but the number 00010111 will be equal to 10111.
+
+
+#############
+
+#String Operators#
+
+#The string data type has numerous utilities that make string computations much easier.
+
+#Strings are compatible with the comparison operators. Each character has a Unicode value.
+
+#This allows strings to be compared on the basis of their Unicode values.
+
+#When two strings have different lengths, the string which comes first in the dictionary is said to have the smaller value.
+
+print('a' < 'b')  # 'a' has a smaller Unicode value (returns true)
+
+house = "Gryffindor"
+house_copy = "Gryffindor"
+
+print(house == house_copy) #returns true
+
+new_house = "Slytherin"
+
+print(house == new_house) #returns false
+
+print(new_house <= house) #returns false
+
+print(new_house >= house) #returns true
+
+
+#Concatenation#
+
+#The + operator can be used to merge two strings together:
+
+
+first_half = "Bat"
+second_half = "man"
+
+full_name = first_half + second_half
+print(full_name)
+
+#returns Batman!
+
+#The * operator allows us to multiply a string, resulting in a repeating pattern:
+
+print("ha" * 3)
+
+#returns hahaha
+
+
+#Search#
+
+#The in keyword can be used to check if a particular substring exists in another string.
+# If the substring is found, the operation returns true.
+
+random_string = "This is a random string"
+
+print('of' in random_string)  # Check whether 'of' exists in randomString... returns false as it isnt included in the string
+print('random' in random_string)  # 'random' exists!... returns true as it is included in the string
+
