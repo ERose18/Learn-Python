@@ -221,3 +221,41 @@ print(num)
 
 num %= 2
 print(num)
+
+
+#############
+
+#Logical Operators#
+
+# Operator 	 Purpose 	  Notation
+# and          AND 	       In-fix
+# or 	        OR 	       In-fix
+# not          NOT 	       Prefix
+
+
+#Logical Expressions#
+
+#Logical expressions are formed using Booleans and logical operators.
+
+# OR Expression
+my_bool = True or False
+print(my_bool)
+
+# AND Expression
+my_bool = True and False
+print(my_bool)
+
+# NOT expression
+my_bool = False
+print(not my_bool)
+
+
+#Bit Value #
+
+#In bit terms, the value of True is 1. False corresponds to 0:
+
+print(10 * True)
+print(10 * False)
+
+#The Python interpreter can automatically convert the bool to its numerical form when needed.
+
