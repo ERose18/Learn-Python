@@ -259,3 +259,72 @@ print(10 * False)
 
 #The Python interpreter can automatically convert the bool to its numerical form when needed.
 
+#############
+
+#Bitwise Operators#
+
+#In programming, all data is actually made up of 0s and 1s known as bits. 
+#Bitwise operators allow us to perform bit-related operations on values.
+
+# Operator 	    Purpose 	    Notation
+# & 	    Bitwise AND 	    In-fix
+# | 	    Bitwise OR 	        In-fix
+# ^ 	    Bitwise XOR 	    In-fix
+# ~ 	    Bitwise NOT 	    Prefix
+# << 	    Shift Bits Left 	In-fix
+# >> 	    Shift Bits Right 	In-fix
+
+num1 = 10  # Binary value = 01010
+num2 = 20  # Binary Value = 10100
+
+print(num1 & num2)   # 0   -> Binary value = 00000
+print(num1 | num2)   # 30  -> Binary value = 11110
+print(num1 ^ num2)   # 30  -> Binary value = 11110
+print(~num1)         # -11 -> Binary value = -(1011)
+print(num1 << 3)     # 80  -> Binary value = 0101 0000
+print(num2 >> 3)     # 2   -> Binary value = 0010
+
+
+#When performing the bitwise AND (&) operation, it takes the bit from num1 and the corresponding bit from num2 and performs an AND
+#between them, this essentially is multiplication
+
+
+   # num1 is 01010 in binary and num2 is 10100.
+   # At the first step, the first binary digits of both numbers are taken:
+        #    01010
+        #    10100
+    #0 & 1 would give 0 (again, think of it as multiplication).
+    #Next, we take the second digits:
+        #    01010
+        #    10100
+    #These two will once again give us 0.
+    #Doing this for all pairs, we can see that the answer is 0 each time.
+    #Hence, the output is 00000.
+
+#When performing the OR operation, it works on the same principle, however it will be addition instead of multiplication
+
+#0 OR 1 gives us 1.
+# 1 OR 1 also produces 1 (binary numbers do not go beyond 1). 
+# However, 0 OR 0 will give us 0 (0 + 0 is still 0).
+
+#Bitwise XOR and NOT will work on each bit as well.
+
+#The bitshift operations (>> and <<) simply move the bits to either the right or the left.
+# When a binary number is shifted, a 0 also enters at the opposite end to keep the number of the same size.
+
+
+#Examples of bitshift operations
+
+#if we have 0110 >> 2
+#we move it one step to the right to make 0011
+#then we movie it one step to the right again to make it two bitsteps, this makes 0001
+#this operation is now completed
+
+#we can also do this to the left
+
+#if we have 0110 << 2
+#we move it one step to the left to make 01100
+#then we movie it one more step to the left to make it two bitsteps, this makes 011000
+#this operation is now completed
+
+#the number 0011 will be equal to 11, but the number 00010111 will be equal to 10111.
